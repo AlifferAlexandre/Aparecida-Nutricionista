@@ -1,0 +1,44 @@
+{
+  "profile": [
+    {
+      "nome": "Fabio Giga",
+      "peso": 93,
+      "altura": 1.81,
+      "gordura": 10,
+      "imc": 28.33,
+      "id": "212a"
+    },
+    {
+      "nome": "Ramon Dino",
+      "peso": 88,
+      "altura": 1.76,
+      "gordura": 8,
+      "imc": 28.41,
+      "id": "c0c4"
+    },
+    {
+      "nome": "Cris Bambester",
+      "peso": 72,
+      "altura": 1.69,
+      "gordura": 12,
+      "imc": 25.21,
+      "id": "6650"
+    },
+    {
+      "nome": "Bitelo",
+      "peso": 105,
+      "altura": 1.86,
+      "gordura": 15,
+      "imc": 30.29,
+      "id": "ba16"
+    },
+    {
+      "nome": "Eddie Hall",
+      "peso": 164,
+      "altura": 1.9,
+      "gordura": 18,
+      "imc": 45.39,
+      "id": "2f7f"
+    }
+  ]
+}

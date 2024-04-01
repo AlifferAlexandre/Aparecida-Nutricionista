@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o título da página -->
+    <title>Aparecida Nutrição</title>
+    <!-- Ícone da página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <!-- Título principal da página -->
+        <h1 class="titulo">Aparecida Nutrição</h1>
+    </div>
+</header>
+<main>
+    <section class="container">
+        <!-- Título para adicionar novo paciente -->
+        <h2>Adicionar novo paciente</h2>
+        <!-- Lista de mensagens de erro -->
+        <ul id="mensagem-erro"></ul>
+
+        <!-- Formulário para adicionar novo paciente -->
+        <div class=""></div>
+        <form action="" id="form-adiciona">
+            <div class="grupo">
+                <!-- Campo para digitar o nome do paciente -->
+                <label class="label" for="">Nome:</label>
+                <input id="nome" class="campo" name="nome" type="text" placeholder="digite o nome do seu paciente">
+            </div>
+            <div class="grupo">
+                <!-- Campo para digitar o peso do paciente -->
+                <label class="label" for="">Peso:</label>
+                <input id="peso" class="campo campo-medio" name="peso" type="text" placeholder="digite o seu peso">
+            </div>
+            <div class="grupo">
+                <!-- Campo para digitar a altura do paciente -->
+                <label class="label" for="altura">Altura:</label>
+                <input class="campo campo-medio" name="altura" id="altura" type="text"
+                       placeholder="digite a sua altura">
+            </div>
+            <div class="grupo">
+                <!-- Campo para digitar a porcentagem de gordura do paciente -->
+                <label class="label" for="">% de Gordura:</label>
+                <input class="campo campo-medio" id="gordura" name="gordura" type="text"
+                       placeholder="digite a porcentagem de gordura">
+            </div>
+        </form>
+        </div>
+        <!-- Botão para adicionar novo paciente -->
+        <button class="button bto-principal" id="adicionar-paciente">Adicionar</button>
+    </section>
+</main>
+<!-- Script para atualizar paciente -->
+<script type="module" src="js/atualizaPaciente.js"></script>
+</body>
+
+</html>

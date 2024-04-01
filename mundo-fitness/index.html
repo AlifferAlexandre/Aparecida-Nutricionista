@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aparecida Nutrição</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- Reseta o estilo dos elementos HTML -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- Estilos específicos da página -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<!-- Aqui fica o título da página -->
+			<h1 class="titulo">Aparecida Nutrição</h1>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<!-- Campo para filtrar pacientes -->
+			<label for="">Filtra:</label>
+			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Filtrar tabela">
+			<!-- Título da tabela de pacientes -->
+			<h2>Meus pacientes</h2>
+			<!-- Tabela que exibe os pacientes -->
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Peso(kg)</th>
+						<th>Altura(m)</th>
+						<th>Gordura Corporal(%)</th>
+						<th>IMC</th>
+						<th>Ação</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-pacientes">
+				</tbody>
+			</table>
+			<!-- Mensagem de erro ao buscar pacientes -->
+			<span id="erro-ajax" class="invisivel">Erro ao buscar pacientes: </span>
+		</section>
+		<section class="container">
+			<!-- Título para adicionar novo paciente -->
+			<h2>Adicionar novo paciente</h2>
+			<!-- Lista de mensagens de erro -->
+			<ul id="mensagem-erro"></ul>
+
+			<!-- Formulário para adicionar novo paciente -->
+			<form action="" id="form-adiciona">
+				<div class="grupo">
+					<label class="label" for="">Nome:</label>
+					<input id="nome" class="campo" name="nome" type="text" placeholder="digite o nome do seu paciente">
+				</div>
+				<div class="grupo">
+					<label class="label" for="">Peso:</label>
+					<input id="peso" class="campo campo-medio" name="peso" type="text" placeholder="digite o seu peso">
+				</div>
+				<div class="grupo">
+					<label class="label" for="altura">Altura:</label>
+					<input class="campo campo-medio" name="altura" id="altura" type="text"
+						placeholder="digite a sua altura">
+				</div>
+				<div class="grupo">
+					<label class="label" for="">% de Gordura:</label>
+					<input class="campo campo-medio" id="gordura" name="gordura" type="text"
+						placeholder="digite a porcentagem de gordura">
+				</div>
+			</form>
+			<!-- Botão para adicionar novo paciente -->
+			<button class="button bto-principal" id="adicionar-paciente">Adicionar</button>
+		</section>
+	</main>
+
+	<!-- Script para filtrar pacientes -->
+	<script src="js/filtra.js"></script>
+	<!-- Script para listar pacientes -->
+	<script type="module" src="js/listaPacientes.js"></script>
+	<!-- Script para cadastrar pacientes -->
+	<script type="module" src="js/cadastraPacientes.js"></script>
+</body>
+
+</html>
